@@ -2,22 +2,24 @@
 <html lang="en">
 
 <head>
-  <title>Home</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-
-  <link rel="stylesheet" href="style.css" />
+  <title>Exercicios</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width"/>
+  <!-- <link rel="stylesheet" href="style.css"/> -->
   <script src="script.js" defer></script>
 </head>
 
 <body>
   <main>
-    <ul id="lista-de-frutas">
-      <li id="fruta-1"></li>
-      <li id="fruta-2"></li>
-      <li id="fruta-3"></li>
+    <ul id="Lista-de-frutas">
+      <li id="fruta-1">laranja</li>
+      <li id="fruta-2">limão</li>
+      <li id="fruta-3">uva</li>
       <li id="fruta-4"></li>
     </ul>
+    <label for="fruta">Adicione uma fruta:</label>
+    <input type="text" id="fruta" name="fruta" value="" onchange="frutaNova()"/>
+    <button onclick="adicionarFruta()">Adicionar</button>
   </main>
 </body>
 
